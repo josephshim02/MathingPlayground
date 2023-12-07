@@ -1,5 +1,6 @@
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JButton;
 
 import java.awt.Graphics;
 import java.awt.Dimension;
@@ -29,9 +30,14 @@ public class Main extends JFrame {
       this.setContentPane(canvas);
       this.pack();
       this.setVisible(true);
+      this.setLayout(null);
+      JButton b=new JButton("click");//creating instance of JButton
+      b.setBounds(130,100,100, 40);
+      this.add(b);
     }
 
     public void run() {
+
 
     }
 }
